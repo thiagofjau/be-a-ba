@@ -3,35 +3,46 @@
     font-family: Inter;
     padding: 0;
 }
- :root {
+
+:root {
     background-color: #242424;
     color: #ffffffde;
-    color-scheme: dark; /*deixa o geral mais dark, escurecido*/
- }
+    color-scheme: dark;
+    /*deixa o geral mais dark, escurecido*/
+}
 
- body {
-    height: 100vh; /*pegar tela toda no height*/
+h1 {
+    background: linear-gradient(94.23deg, #a87dff 12.41%, #ffb8b8 52.55%, #1dff43 89.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body {
+    height: 100vh;
+    /*pegar tela toda no height*/
     margin: 0;
- }
+}
 
- #app {
+#app {
     height: -webkit-fill-available;
     height: moz-available;
     height: 100%;
     width: 100%;
     margin: 0 auto;
     text-align: center;
- }
+}
 
 
- main {
+main {
     display: flex;
     flex-direction: column;
-    height: 100%; /*continuar pegando 100% da app*/
- }
+    height: 100%;
+    /*continuar pegando 100% da app*/
+}
 
 .content {
-    flex: 1; /*preencher toda tela*/
+    flex: 1;
+    /*preencher toda tela*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,9 +73,21 @@
     border: 2px solid white;
     border-radius: 1rem;
 }
-#first-letter{background-color: red;}
-#second-letter{background-color: green;}
-#third-letter{background-color: blue;}
+
+#first-letter {
+    background: linear-gradient(45.23deg, #5374fa 12.41%, #fd9179 52.55%, #ff6969 89.95%);
+    -webkit-text-fill-color: white;
+}
+
+#second-letter {
+    background: linear-gradient(290.23deg, #53fab7 12.41%, #fd9179 52.55%, #82009f 89.95%);
+    -webkit-text-fill-color: white;
+}
+
+#third-letter {
+    background: linear-gradient(100.23deg, #5374fa 8.41%, #fd9179 70.55%, #ff6969 89.95%);
+    -webkit-text-fill-color: white;
+}
 
 .input {
     width: 24.5rem;
@@ -81,7 +104,10 @@
     padding: 10px;
     margin-top: 2rem;
     border-radius: 0.5rem;
-    background-color: #4d4d4d ;
+    background: linear-gradient(45.23deg, #5374fa 12.41%, #fd9179 52.55%, #ff6969 89.95%);
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: white;
+    font-weight: bold;
     transition: background-color 0.25s;
     cursor: pointer;
 }

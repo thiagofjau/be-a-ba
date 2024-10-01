@@ -8,7 +8,7 @@ export const game = {
 
         //gerar letras
 
-        const alphabeth = "abcdefghijlmnopqrstuvs";
+        const alphabeth = "abcdefghijlmnopqrstuv";
 
         this.letters = new Array(3).fill().map(function (letter) {
             const randomIndex = Math.floor(Math.random() * alphabeth.length);

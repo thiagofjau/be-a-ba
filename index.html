@@ -13,6 +13,7 @@
   <body>
     <div id="app">
       <main>
+        <h1>BORA JOGAR?</h1>
         <div class="content">
           <div id="streak" class="streak">
             
@@ -27,7 +28,14 @@
               <input id="word" class="input" type="text" name="word" disabled />
               <div>
                 <span id="error" class="error">
-                  A palavra digitada não existe
+                  A palavra já digitada ou não existe
+                </span>
+              </div>
+              <div>
+                <span id="word-list" class="word-list">
+                <ul id="word-list-ul">
+                  <!-- Lista de palavras digitadas aparecerá aqui -->
+                </ul>
                 </span>
               </div>
             </form>
